@@ -1,15 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "blizzardmod",
+  "id": "simine",
   "version": "${version}",
-  "name": "Blizzard",
-  "description": "Adds a new weather: Blizzard. Custom snow particles and freezing damage for players that are not under cover.",
+  "name": "Si-mine",
+  "description": "Adds a new weather: Blizzard. Dense snow, dark sky and freezing damage for players that are not under cover.",
   "license": "MIT",
   "environment": "*",
   "entrypoints": {
-    "main": ["com.example.blizzardmod.BlizzardMod"],
-    "client": ["com.example.blizzardmod.client.BlizzardClient"]
+    "main": ["com.example.simine.SiMine"],
+    "client": ["com.example.simine.client.SiMineClient"]
   },
+  "mixins": ["simine.mixins.json"],
   "depends": {
     "fabricloader": ">=0.16.0",
     "minecraft": "~1.21.1",
